@@ -89,7 +89,6 @@ auto SharedPtr<T>::operator=(SharedPtr && r) -> SharedPtr& {
 }
 
 
-// проверяет, указывает ли указатель на объект
 template <typename T>
 SharedPtr<T>::operator bool() const {
     return (this->ptr != nullptr);
@@ -138,7 +137,6 @@ void SharedPtr<T>::swap(SharedPtr & r) {
 }
 
 
-// возвращает количество объектов SharedPtr, которые ссылаются на тот же управляемый объект
 template <typename T>
 atomic_uint* SharedPtr<T>::use_count() {
     return this->cnt_of_use;
