@@ -28,7 +28,6 @@ int main() {
         cout << "\nPtr3 = " << *ptr3.get() << " cnt = " << *ptr3.use_count();
 
         ptr1.swap(ptr3);
-
         cout << "\n\nСвапаем Ptr1 и Ptr3 :";
         cout << "\nPtr1 = " << *ptr1.get();
         cout << "\nPtr3 = " << *ptr3.get();
