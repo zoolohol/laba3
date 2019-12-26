@@ -1,3 +1,4 @@
+//Copyright 2019 <LinkIvan333>
 #include <iostream>
 #include "SharedPtr.h"
 
@@ -38,7 +39,6 @@ int main() {
         cout << "\nPtr4 = " << *ptr4.get() << " cnt = " << *ptr4.use_count();
         cout << "\nPtr3 = " << *ptr3.get() << " cnt = " << *ptr3.use_count()
         << std::endl;
-
     }
     catch (const std::exception& e) {
         cout << "\n" << e.what();
