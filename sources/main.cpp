@@ -21,7 +21,8 @@ int main() {
         cout << "\nPtr2 = " << *ptr2.get() << " cnt = " << *ptr2.use_count();
         cout << "\nPtr3 = " << *ptr3.get() << " cnt = " << *ptr3.use_count();
 
-        cout << "\n\nPtr3 был скопирован из Ptr2. Теперь удалим Ptr2 для проверки"
+        cout << "\n\nPtr3 был скопирован из Ptr2. Теперь удалим "
+                "Ptr2 для проверки"
         << " количества указателей на y...\nУдаляем PTR2...";
         ptr2.reset();
         cout << "\nPtr3 = " << *ptr3.get() << " cnt = " << *ptr3.use_count();
