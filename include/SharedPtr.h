@@ -126,8 +126,6 @@ void SharedPtr<T>::reset() {
 template <typename T>
 void SharedPtr<T>::reset(T * ptr) {
     if (this->cnt_of_use != nullptr) --*this->cnt_of_use;
-
-
     this->ptr = ptr;
     this->cnt_of_use = new atomic_uint{1};
 }
