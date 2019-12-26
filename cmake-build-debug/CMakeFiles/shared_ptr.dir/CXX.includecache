@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SharedPtr.h
+iostream
+-
+atomic
+-
+
+/cygdrive/c/Git/laba3/sources/main.cpp
+iostream
+-
+SharedPtr.h
+/cygdrive/c/Git/laba3/sources/SharedPtr.h
+
